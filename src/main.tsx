@@ -5,7 +5,6 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import ErrorPage from "./ErrorPage.tsx";
 import Message from "./routes/Message.tsx";
-import AppDashboard from "./routes/AppDashboard/AppDashboard.tsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -13,7 +12,13 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       { path: "/message", element: <Message /> },
-      { path: "/dashboard", element: <AppDashboard /> },
+      { path: "/calendar", element: <></> },
+      { path: "/tasks", element: <></> },
+      { path: "/notes", element: <></> },
+      { path: "/contacts", element: <></> },
+      { path: "/finance", element: <></> },
+      { path: "/health", element: <></> },
+      { path: "/news", element: <></> },
     ],
   },
 ]);

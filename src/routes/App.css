@@ -1,9 +1,34 @@
 #root {
-  max-width: 1280px;
+  /*max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem;*/
 }
 
 .app-wrapper {
+  height: calc(100vh - 50px);
   display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  grid-template-columns: minmax(100px, 300px) auto;
+  grid-template-rows: 50px auto 50px;
+}
+.header {
+  grid-area: header;
+  background-color: #007bff;
+}
+.header a {
+  color: white;
+}
+.sidebar {
+  outline: 1px solid purple;
+  grid-area: sidebar;
+}
+.main {
+  outline: 1px solid purple;
+  grid-area: main;
+}
+.footer {
+  grid-area: footer;
 }
