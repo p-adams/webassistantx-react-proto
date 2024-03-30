@@ -3,9 +3,6 @@ import { Link } from "react-router-dom";
 const AppSidebar = () => {
   return (
     <nav className="sidebar">
-      <div className="logo">
-        <img src="logo.png" alt="WebAssistantX Logo" />
-      </div>
       <ul className="nav-links">
         <li>
           <Link to="/message">Message</Link>
