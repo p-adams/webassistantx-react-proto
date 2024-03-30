@@ -5,6 +5,9 @@ const AppSidebar = () => {
     <nav className="sidebar">
       <ul className="nav-links">
         <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
           <Link to="/message">Message</Link>
         </li>
         <li>
