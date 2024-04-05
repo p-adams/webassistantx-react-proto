@@ -40,10 +40,7 @@ function Contacts() {
       <div>
         <ul>
           {contacts.map((el) => (
-            <li key={el.id}>
-              {el.id}
-              {el.name}
-            </li>
+            <li key={el.id}>{el.name}</li>
           ))}
         </ul>
         <div>
