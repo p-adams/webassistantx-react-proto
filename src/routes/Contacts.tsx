@@ -16,7 +16,7 @@ function Contacts() {
   });
 
   const handleInputChange = useCallback(
-    (e: any) => {
+    (e: React.ChangeEvent<HTMLInputElement>) => {
       setContactValue((prev) => ({
         ...prev,
         [e.target.name]: e.target.value,
